@@ -1,0 +1,68 @@
+body{
+background-color: rgba(255, 255, 255, 0.815) !important;
+}
+
+.navbar img{
+filter: drop-shadow(1px 1px 1px white);
+}
+
+.carousel-item{ 
+    width: 100% !important;
+object-fit: cover !important;
+}
+
+.carousel-caption p,h3{
+    text-transform: uppercase;
+    background: linear-gradient(to right bottom, #000000,#03a755, #ffff,#0059ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 3s linear infinite;
+
+}
+#menuButton{
+width: 3vh;
+height: 3vh;
+}
+
+.card
+{
+    width: 30vh;
+    height: 25vh !important;
+    filter: drop-shadow(2px 1px 3px rgb(0, 0, 0));
+animation-name: popup;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+/* animation-delay: 5s; */
+transform: translateX(-120%);
+}
+
+
+@keyframes popup {
+    to {
+    transform: translateX(0);
+    
+    }
+}
+
+@keyframes animate-gradient {
+    to {
+    background-position: 200%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 40vh !important;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .carousel-item img {
+        height: 60vh !important;
+    }
+    
+}
