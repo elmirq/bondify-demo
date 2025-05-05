@@ -21,7 +21,7 @@ background-color: rgb(49, 43, 153) !important;
 
 .carousel-item{ 
     width: 100% !important;
-object-fit: cover !important;
+object-fit: fill !important;
 }
 
 .carousel-caption p,h3{
